@@ -2,15 +2,15 @@
 
 =head1 NAME
 
-  noisy-trap-memory.pl - Massively multimodal deceptive problem
+  noisy-trap-memory-wilcoxon.pl - Massively multimodal deceptive problem
 
 =head1 SYNOPSIS
 
-  prompt% ./noisy-trap-memory.pl <population> <number of generations>
+  prompt% ./noisy-trap-memory-wilcoxon.pl <population> <number of generations>
 
 or
 
-  prompt% perl noisy-trap-memory.pl <population> <number of generations>
+  prompt% perl noisy-trap-memory-wilcoxon.pl <population> <number of generations>
 
 Shows fitness and best individual  
   
@@ -29,7 +29,7 @@ use v5.14;
 
 use Time::HiRes qw( gettimeofday tv_interval);
 
-use lib qw(lib ../lib);
+use lib qw(lib ../lib  ../../Algorithm-Evolutionary/lib);
 use Algorithm::Evolutionary::Individual::BitString;
 use Algorithm::Evolutionary::Op::Easy;
 use Algorithm::Evolutionary::Op::Mutation;
@@ -85,11 +85,9 @@ my $inicioTiempo = [gettimeofday()];
 
 #----------------------------------------------------------#
 # Initial memory
- for my $p ( @pop ) {
-   for ( 1..5 ) {
-     push(@{$p->{'_fitness_memory'}}, $noisy->apply( $p ));
-   }
- }
+for my $p ( @pop ) {
+    push(@{$p->{'_fitness_memory'}}, $noisy->apply( $p ));
+}
 
 my $contador=0;
 my $best = "1"x($length*$blocks);
@@ -98,8 +96,10 @@ my $best_found;
 do {
     # Must re-evaluate each iteration
     for my $p ( @pop ) {
-	push(@{$p->{'_fitness_memory'}}, $noisy->apply( $p ));
 	$p->Fitness($comparisons);
+	if (! $p->{'_fitness_memory'} || ( @{$p->{'_fitness_memory'}} < 30) ) {
+	    push(@{$p->{'_fitness_memory'}}, $noisy->apply( $p ));
+	}
     }
     for my $i (1..$comparisons) {
       my @copy_of_population = @pop;
