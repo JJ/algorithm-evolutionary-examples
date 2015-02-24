@@ -2,15 +2,15 @@
 
 =head1 NAME
 
-  noisy-trap-memory.pl - Massively multimodal deceptive problem
+  noisy-trap-memory-wilcoxon-data.pl - Noisy evolutionary algorithm
 
 =head1 SYNOPSIS
 
-  prompt% ./noisy-trap-memory.pl <population> <number of generations>
+  prompt% noisy-trap-memory-wilcoxon-data.pl <population> <number of generations>
 
 or
 
-  prompt% perl noisy-trap-memory.pl <population> <number of generations>
+  prompt% perl noisy-trap-memory-wilcoxon-data.pl <population> <number of generations>
 
 Shows fitness and best individual  
   
@@ -29,7 +29,7 @@ use v5.14;
 
 use Time::HiRes qw( gettimeofday tv_interval);
 
-use lib qw(lib ../lib);
+use lib qw(lib ../lib ../../Algorithm-Evolutionary/lib);
 use Algorithm::Evolutionary::Individual::BitString;
 use Algorithm::Evolutionary::Op::Easy;
 use Algorithm::Evolutionary::Op::Mutation;
@@ -97,9 +97,11 @@ say ",", join(",", 0..$comparisons*2);
 do {
   # Must re-evaluate each iteration
   for my $p ( @pop ) {
-	push(@{$p->{'_fitness_memory'}}, $noisy->apply( $p ));
-	$p->Fitness($comparisons);
-    }
+      $p->Fitness($comparisons);
+      if (! $p->{'_fitness_memory'} || ( @{$p->{'_fitness_memory'}} < 30) ) {
+	  push(@{$p->{'_fitness_memory'}}, $noisy->apply( $p ));
+      }
+  }
   for my $i (1..$comparisons) {
     my @copy_of_population = @pop;
     while( @copy_of_population ) {
