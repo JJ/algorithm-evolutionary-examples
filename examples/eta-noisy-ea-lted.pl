@@ -32,7 +32,7 @@ use IO::YAML;
 use DateTime;
 use Config;
 
-use lib qw(lib ../lib);
+use lib qw(lib ../lib ../../Algorithm-Evolutionary/lib);
 use Algorithm::Evolutionary::Individual::BitString;
 use Algorithm::Evolutionary::Op::Tournament_Selection;
 use Algorithm::Evolutionary::Op::Replace_Worst;
@@ -95,11 +95,7 @@ my $noisy = new  Algorithm::Evolutionary::Fitness::Noisy( $fitness_object,
 							sub { return random_normal(1,0, $noise_sigma);});
 
 #----------------------------------------------------------#
-# Usamos estos operadores para definir una generación del algoritmo. Lo cual
-# no es realmente necesario ya que este algoritmo define ambos operadores por
-# defecto. Los parámetros son la función de fitness, la tasa de selección y los
-# operadores de variación.
-#my $fitness = sub { $trap->apply(@_) };
+# These two operators are created before defining the real algorithm from a skeleton. 
 
 my $selector = new  Algorithm::Evolutionary::Op::Tournament_Selection $tournament_size;
 my $replacer = new  Algorithm::Evolutionary::Op::Replace_Worst;
