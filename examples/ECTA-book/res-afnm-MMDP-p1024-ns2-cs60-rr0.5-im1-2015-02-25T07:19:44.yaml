@@ -1,0 +1,1380 @@
+---
+arch: x86_64-linux
+best_fitness: 10
+chromosome_length: 60
+fitness:
+  class: MMDP
+max_evals: 1000000
+noise_sigma: 2
+population_size: 1024
+replacement_rate: 0.5
+uname: 'linux penny 3.13.0-34-generic #60-ubuntu smp wed aug 13 15:45:27 utc 2014 x86_64 x86_64 x86_64 gnulinux '
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 1026
+      v:
+        - 11.257649100213
+        - 11.9023244893214
+  _fitness_memory:
+    - 11.257649100213
+    - 11.9023244893214
+  _length: 60
+  _str: 100011000111101001000000111100111111010110101001011010100101
+evals: 2563
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 3
+      tag: 2051
+      v:
+        - 11.257649100213
+        - 11.9023244893214
+        - 9.85065141435812
+  _fitness_memory:
+    - 11.257649100213
+    - 11.9023244893214
+    - 9.85065141435812
+  _length: 60
+  _str: 100011000111101001000000111100111111010110101001011010100101
+evals: 4101
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 3076
+      v:
+        - 11.1067496904154
+        - 2.07519211162473
+  _fitness_memory:
+    - 11.1067496904154
+    - 2.07519211162473
+  _length: 60
+  _str: 010001101101101000001000010011010110000000101011101000110110
+evals: 5639
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 4101
+      v:
+        - 9.97355956930164
+        - 3.20326620471774
+  _fitness_memory:
+    - 9.97355956930164
+    - 3.20326620471774
+  _length: 60
+  _str: 011000101011000110101001110010100011001011101110101111101011
+evals: 7177
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 5126
+      v:
+        - 11.0419409245179
+        - 3.89849419798939
+  _fitness_memory:
+    - 11.0419409245179
+    - 3.89849419798939
+  _length: 60
+  _str: 100110100001000101001001110001001101100001001010100101111010
+evals: 8715
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 6151
+      v:
+        - 10.4985155906878
+        - 8.52893200501908
+  _fitness_memory:
+    - 10.4985155906878
+    - 8.52893200501908
+  _length: 60
+  _str: 000101111111000000001010001111011110101101001100111111100010
+evals: 10253
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 7176
+      v:
+        - 10.9732816308807
+        - 9.85581424231561
+  _fitness_memory:
+    - 10.9732816308807
+    - 9.85581424231561
+  _length: 60
+  _str: 000111110101010001100101101100010101000010101010110001011100
+evals: 11791
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 8201
+      v:
+        - 10.8666059253239
+        - 4.09976770959844
+  _fitness_memory:
+    - 10.8666059253239
+    - 4.09976770959844
+  _length: 60
+  _str: 000101111111000000000111100110111111010000110111010110000010
+evals: 13329
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 9226
+      v:
+        - 12.2962982303149
+        - 3.43823890537731
+  _fitness_memory:
+    - 12.2962982303149
+    - 3.43823890537731
+  _length: 60
+  _str: 100010101010000101101110011100000000010010000000000110110101
+evals: 14867
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 10251
+      v:
+        - 11.2917548328889
+        - 5.16006204101248
+  _fitness_memory:
+    - 11.2917548328889
+    - 5.16006204101248
+  _length: 60
+  _str: 111000111001100111010110110001101001000101111111111010100101
+evals: 16405
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 11276
+      v:
+        - 13.2285233427901
+        - 5.32383858201876
+  _fitness_memory:
+    - 13.2285233427901
+    - 5.32383858201876
+  _length: 60
+  _str: 011100100100111000101101110001110001011000001011111111001001
+evals: 17943
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 12301
+      v:
+        - 13.6129013612812
+        - 5.0479290780396
+  _fitness_memory:
+    - 13.6129013612812
+    - 5.0479290780396
+  _length: 60
+  _str: 111111000111000000011000011100010110111111001011111110110001
+evals: 19481
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 13326
+      v:
+        - 12.1411240266765
+        - 6.61717599713429
+  _fitness_memory:
+    - 12.1411240266765
+    - 6.61717599713429
+  _length: 60
+  _str: 110101001111101001000000101100111111010110101001011100001001
+evals: 21019
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 14351
+      v:
+        - 11.9574354234779
+        - 7.35955462902366
+  _fitness_memory:
+    - 11.9574354234779
+    - 7.35955462902366
+  _length: 60
+  _str: 001011111000000000010111100011110110111111111111110000001101
+evals: 22557
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 15376
+      v:
+        - 12.1605549487074
+        - 4.25006276907116
+  _fitness_memory:
+    - 12.1605549487074
+    - 4.25006276907116
+  _length: 60
+  _str: 111111010110110010000001010011001010111000110001101001111111
+evals: 24095
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 16401
+      v:
+        - 10.284801288927
+        - 7.25190049945126
+  _fitness_memory:
+    - 10.284801288927
+    - 7.25190049945126
+  _length: 60
+  _str: 010101111111000000000101001011010110010101010001011010001101
+evals: 25633
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 17426
+      v:
+        - 12.0818562976444
+        - 6.49028509074348
+  _fitness_memory:
+    - 12.0818562976444
+    - 6.49028509074348
+  _length: 60
+  _str: 110100011010110100010101110110111111111111110010100101111011
+evals: 27171
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 18451
+      v:
+        - 12.6916437998412
+        - 3.98122938209646
+  _fitness_memory:
+    - 12.6916437998412
+    - 3.98122938209646
+  _length: 60
+  _str: 100110000111100110010011011001101010111111111111101101000011
+evals: 28709
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 19476
+      v:
+        - 12.7548443815303
+        - 10.0521651913751
+  _fitness_memory:
+    - 12.7548443815303
+    - 10.0521651913751
+  _length: 60
+  _str: 010011010111101001000000111100111111010110101001000110000111
+evals: 30247
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 20501
+      v:
+        - 13.0370240142222
+        - 11.2368324062513
+  _fitness_memory:
+    - 13.0370240142222
+    - 11.2368324062513
+  _length: 60
+  _str: 111111000111101001000000011100010010111111111111000000110001
+evals: 31785
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 21526
+      v:
+        - 12.9558231537592
+        - 7.07837436744696
+  _fitness_memory:
+    - 12.9558231537592
+    - 7.07837436744696
+  _length: 60
+  _str: 111111111111000011101010111111101011100011001001101001111111
+evals: 33323
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 22551
+      v:
+        - 13.0660115768243
+        - 4.92828829705696
+  _fitness_memory:
+    - 13.0660115768243
+    - 4.92828829705696
+  _length: 60
+  _str: 100001100110110010111000111111010101011111011010100000111111
+evals: 34861
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 23576
+      v:
+        - 12.360479224264
+        - 8.52322719401058
+  _fitness_memory:
+    - 12.360479224264
+    - 8.52322719401058
+  _length: 60
+  _str: 111111000111110001000000011100010110111111000000111010110001
+evals: 36399
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 24601
+      v:
+        - 13.2114772421661
+        - 5.7239663709957
+  _fitness_memory:
+    - 13.2114772421661
+    - 5.7239663709957
+  _length: 60
+  _str: 101100101010000000010010000000100000010010101100111111000011
+evals: 37937
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 25626
+      v:
+        - 14.4330063733912
+        - 10.8486246450451
+  _fitness_memory:
+    - 14.4330063733912
+    - 10.8486246450451
+  _length: 60
+  _str: 011001111111000000010101110110111111010011111010000000000000
+evals: 39475
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 26651
+      v:
+        - 14.3292147234426
+        - 7.49825341220402
+  _fitness_memory:
+    - 14.3292147234426
+    - 7.49825341220402
+  _length: 60
+  _str: 100011000111101001000000000011000000010011111111000000110001
+evals: 41013
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 27676
+      v:
+        - 12.2796058901197
+        - 8.79458697965656
+  _fitness_memory:
+    - 12.2796058901197
+    - 8.79458697965656
+  _length: 60
+  _str: 111111000111101001000000101100111111010110101001110011111111
+evals: 42551
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 28701
+      v:
+        - 13.5734886439042
+        - 5.71741549991045
+  _fitness_memory:
+    - 13.5734886439042
+    - 5.71741549991045
+  _length: 60
+  _str: 111111100101000000001000011100010110111111111111110010110001
+evals: 44089
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 29726
+      v:
+        - 13.3503019525236
+        - 3.94702661253831
+  _fitness_memory:
+    - 13.3503019525236
+    - 3.94702661253831
+  _length: 60
+  _str: 110101111111000000000000011100010110111111111111011010111111
+evals: 45627
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 30751
+      v:
+        - 13.5356706509393
+        - 2.13134271953548
+  _fitness_memory:
+    - 13.5356706509393
+    - 2.13134271953548
+  _length: 60
+  _str: 111111101000100001000000011100010110111011110100111111111111
+evals: 47165
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 31776
+      v:
+        - 11.9521746572031
+        - 7.97761025607015
+  _fitness_memory:
+    - 11.9521746572031
+    - 7.97761025607015
+  _length: 60
+  _str: 001011111000000000010101110110111111111111111111100111001101
+evals: 48703
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 32801
+      v:
+        - 13.1838237060924
+        - 9.6757086773255
+  _fitness_memory:
+    - 13.1838237060924
+    - 9.6757086773255
+  _length: 60
+  _str: 001011111111100110000000011100000000010110111111111111110101
+evals: 50241
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 33826
+      v:
+        - 13.9758873628394
+        - 8.17151947195195
+  _fitness_memory:
+    - 13.9758873628394
+    - 8.17151947195195
+  _length: 60
+  _str: 111111000000000000011010000000010110111111111111010011111111
+evals: 51779
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 34851
+      v:
+        - 13.6054755840324
+        - 7.14441664840679
+  _fitness_memory:
+    - 13.6054755840324
+    - 7.14441664840679
+  _length: 60
+  _str: 010111000111000000000000101010000000011111111111010011111111
+evals: 53317
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 35876
+      v:
+        - 14.2329795391669
+        - 5.97871783744859
+  _fitness_memory:
+    - 14.2329795391669
+    - 5.97871783744859
+  _length: 60
+  _str: 010101111111000000000000011100011011111111111111101010111111
+evals: 54855
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 36901
+      v:
+        - 13.9848036552764
+        - 9.11143453432617
+  _fitness_memory:
+    - 13.9848036552764
+    - 9.11143453432617
+  _length: 60
+  _str: 111111111111000000000000000000010110111111111111001111111111
+evals: 56393
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 37926
+      v:
+        - 13.9432333544131
+        - 7.792664927469
+  _fitness_memory:
+    - 13.9432333544131
+    - 7.792664927469
+  _length: 60
+  _str: 111111000111110001000000011100010110111111111111110010110001
+evals: 57931
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 38951
+      v:
+        - 13.5225956846924
+        - 5.79533585908468
+  _fitness_memory:
+    - 13.5225956846924
+    - 5.79533585908468
+  _length: 60
+  _str: 010101111111000000000000000000111111010011111111011001100011
+evals: 59469
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 39976
+      v:
+        - 14.4900122975121
+        - 3.98933968205994
+  _fitness_memory:
+    - 14.4900122975121
+    - 3.98933968205994
+  _length: 60
+  _str: 111111000111000000000000011010001111111111111111001010111111
+evals: 61007
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 41001
+      v:
+        - 13.2031064016251
+        - 6.65582775869743
+  _fitness_memory:
+    - 13.2031064016251
+    - 6.65582775869743
+  _length: 60
+  _str: 111111100100000000010100100011000110111111111111110010110001
+evals: 62545
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 42026
+      v:
+        - 13.9752204825979
+        - 5.88089382476143
+  _fitness_memory:
+    - 13.9752204825979
+    - 5.88089382476143
+  _length: 60
+  _str: 111111000111101001001110000000111111000000111111110001111111
+evals: 64083
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 43051
+      v:
+        - 13.7445612091804
+        - 9.60043090239795
+  _fitness_memory:
+    - 13.7445612091804
+    - 9.60043090239795
+  _length: 60
+  _str: 111111111000000000000000011100010110111111111111110010110001
+evals: 65621
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 44076
+      v:
+        - 14.051868921545
+        - 10.3427623792879
+  _fitness_memory:
+    - 14.051868921545
+    - 10.3427623792879
+  _length: 60
+  _str: 111111000111000000111111000000100011111111111111001101011001
+evals: 67159
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 45101
+      v:
+        - 13.2708541471415
+        - 9.17217656500144
+  _fitness_memory:
+    - 13.2708541471415
+    - 9.17217656500144
+  _length: 60
+  _str: 111111111111110001000000000000111111010110000000101101001011
+evals: 68697
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 46126
+      v:
+        - 14.3736235161558
+        - 12.3765966805766
+  _fitness_memory:
+    - 14.3736235161558
+    - 12.3765966805766
+  _length: 60
+  _str: 111111111111000000000000011100000110111111111111000000111111
+evals: 70235
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 47151
+      v:
+        - 16.1078214791908
+        - 8.52563136142097
+  _fitness_memory:
+    - 16.1078214791908
+    - 8.52563136142097
+  _length: 60
+  _str: 111111111111101001000000110100010110111111111111101010111111
+evals: 71773
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 48176
+      v:
+        - 13.8848835659987
+        - 11.8266225136362
+  _fitness_memory:
+    - 13.8848835659987
+    - 11.8266225136362
+  _length: 60
+  _str: 111111010101000000000000000000010110111111111111001110111111
+evals: 73311
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 49201
+      v:
+        - 13.8335272742811
+        - 8.88271717494062
+  _fitness_memory:
+    - 13.8335272742811
+    - 8.88271717494062
+  _length: 60
+  _str: 111111000111110001000000101001110110111111111111110010110001
+evals: 74849
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 50226
+      v:
+        - 13.5959141968468
+        - 9.96307737235372
+  _fitness_memory:
+    - 13.5959141968468
+    - 9.96307737235372
+  _length: 60
+  _str: 111111000111000000000000111111100011111111111111000000110001
+evals: 76387
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 51251
+      v:
+        - 14.1306139177121
+        - 10.5747026908646
+  _fitness_memory:
+    - 14.1306139177121
+    - 10.5747026908646
+  _length: 60
+  _str: 111111000000000000011010000000010110111111111111010011110111
+evals: 77925
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 52276
+      v:
+        - 14.911322480957
+        - 7.3096631779737
+  _fitness_memory:
+    - 14.911322480957
+    - 7.3096631779737
+  _length: 60
+  _str: 111111111111000000000000011100010110111111111111000000110001
+evals: 79463
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 53301
+      v:
+        - 14.5717396242188
+        - 7.29234628696542
+  _fitness_memory:
+    - 14.5717396242188
+    - 7.29234628696542
+  _length: 60
+  _str: 111111111111000000000000111100111111111111111111001111111111
+evals: 81001
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 54326
+      v:
+        - 14.4272033630921
+        - 10.8314894791289
+  _fitness_memory:
+    - 14.4272033630921
+    - 10.8314894791289
+  _length: 60
+  _str: 011001111111000000000111000000010110111111111111000000000000
+evals: 82539
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 55351
+      v:
+        - 15.2718339268559
+        - 8.17338628233062
+  _fitness_memory:
+    - 15.2718339268559
+    - 8.17338628233062
+  _length: 60
+  _str: 111111001011000000000000000000010110111111111111000000110001
+evals: 84077
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 56376
+      v:
+        - 14.3446789215969
+        - 8.20530472001458
+  _fitness_memory:
+    - 14.3446789215969
+    - 8.20530472001458
+  _length: 60
+  _str: 111111111111000000000000111111111111111111111111010011111111
+evals: 85615
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 57401
+      v:
+        - 14.2068551409969
+        - 8.70747560360183
+  _fitness_memory:
+    - 14.2068551409969
+    - 8.70747560360183
+  _length: 60
+  _str: 111111000000101001000000000000111111111111111111111000111111
+evals: 87153
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 58426
+      v:
+        - 13.6152158483175
+        - 7.96483091195681
+  _fitness_memory:
+    - 13.6152158483175
+    - 7.96483091195681
+  _length: 60
+  _str: 111111111111000000000000000000010110111111111111000000111111
+evals: 88691
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 59451
+      v:
+        - 15.0892334589339
+        - 8.75912228013517
+  _fitness_memory:
+    - 15.0892334589339
+    - 8.75912228013517
+  _length: 60
+  _str: 111111111111000000000000111111111111111111111111001011111111
+evals: 90229
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 60476
+      v:
+        - 13.8841478956453
+        - 9.61287063972135
+  _fitness_memory:
+    - 13.8841478956453
+    - 9.61287063972135
+  _length: 60
+  _str: 111111111111000000000000000000010110111111111111111000111111
+evals: 91767
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 61501
+      v:
+        - 15.4738440488163
+        - 8.14313771239239
+  _fitness_memory:
+    - 15.4738440488163
+    - 8.14313771239239
+  _length: 60
+  _str: 111111010101000000000000000000010110111111111111000000111111
+evals: 93305
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 62526
+      v:
+        - 14.6461547678034
+        - 8.71798994283717
+  _fitness_memory:
+    - 14.6461547678034
+    - 8.71798994283717
+  _length: 60
+  _str: 111111111111000000000000111111111111111111111111010100111111
+evals: 94843
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 63551
+      v:
+        - 15.1449642648537
+        - 9.58998637033902
+  _fitness_memory:
+    - 15.1449642648537
+    - 9.58998637033902
+  _length: 60
+  _str: 111111111111000000000000111111111111111111111111010110111111
+evals: 96381
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 64576
+      v:
+        - 14.9650923711613
+        - 9.47685226353894
+  _fitness_memory:
+    - 14.9650923711613
+    - 9.47685226353894
+  _length: 60
+  _str: 111111111111000000000000111111001011111111111111000000111111
+evals: 97918
+---
+best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+  _chars:
+    - 0
+    - 1
+  _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+    recalc_needed: 1
+    v: !!perl/hash:Statistics::Basic::Vector
+      c:
+        mean: *1
+      s: 2
+      tag: 65600
+      v:
+        - 15.3733060732821
+        - 12.3801057034992
+  _fitness_memory:
+    - 15.3733060732821
+    - 12.3801057034992
+  _length: 60
+  _str: 111111111111000000000000111111111111111111111111000000111111
+evals: 99456
+---
+end:
+  best: !!perl/hash:Algorithm::Evolutionary::Individual::BitString
+    _chars:
+      - 0
+      - 1
+    _fitness: &1 !!perl/hash:Statistics::Basic::Mean
+      recalc_needed: 1
+      v: !!perl/hash:Statistics::Basic::Vector
+        c:
+          mean: *1
+        s: 2
+        tag: 65600
+        v:
+          - 15.3733060732821
+          - 12.3801057034992
+    _fitness_memory:
+      - 15.3733060732821
+      - 12.3801057034992
+    _length: 60
+    _str: 111111111111000000000000111111111111111111111111000000111111
+  evaluations: 99456
+  time: 2.794917
