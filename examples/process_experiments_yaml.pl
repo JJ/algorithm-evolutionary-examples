@@ -2,11 +2,11 @@
 
 =head1 NAME
 
-  process_experiments_text.pl - processes experiment data created by run_experiment.pl
+  process_experiments_yaml.pl - processes experiment data created by run_experiment.pl in YAML
 
 =head1 SYNOPSIS
 
-  prompt% ./process_experiments.pl ID-DATE.yaml
+  prompt% ./process_experiments_yaml.pl preffix best_string
 
 
 =head1 DESCRIPTION  
@@ -23,7 +23,7 @@ use File::Slurp qw( read_file write_file );
 use IO::YAML;
 use v5.14;
 
-my $preffix = shift || die "I need an experiment file, no defaults\n";
+my $preffix = shift || die "I need an preffix, no defaults\n";
 my $best = shift || die "I need the best result for comparison";
 
 my @times;

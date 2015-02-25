@@ -1,12 +1,12 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 =head1 NAME
 
-  process_experiments_text.pl - processes experiment data created by run_experiment.pl
+  process_experiments_yaml_MMDP.pl - processes experiment data created by run_experiment.pl for MMDP
 
 =head1 SYNOPSIS
 
-  prompt% ./process_experiments.pl ID-DATE.yaml
+  prompt% ./process_experiments.pl experiments_preffix
 
 
 =head1 DESCRIPTION  
@@ -18,12 +18,12 @@ Processes and gets stuff from experiments
 use warnings;
 use strict;
 
-use lib qw(lib ../lib);
+use lib qw(lib ../lib ../../Algorithm-Evolutionary/lib);
 use File::Slurp qw( read_file write_file );
 use IO::YAML;
 use v5.14;
 
-use Algorithm::Evolutionary::Fitness::MMDP;
+use Algorithm::Evolutionary::Fitness::MMDP; # Needed to compute MMDP value
 
 my $mmdp = new Algorithm::Evolutionary::Fitness::MMDP;
 
