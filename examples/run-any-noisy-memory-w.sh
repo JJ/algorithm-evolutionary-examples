@@ -5,5 +5,5 @@ CONF=$1
 for i in {1..30}
 do
     echo "Test $i"
-    ./eta-noisy-ea-lted.pl $CONF
+    ./anyfitness-noisy-memory-w-lted.pl $CONF
 done

@@ -65,7 +65,9 @@ my $max_memory = $conf->{'max_memory'} || 30;
 
 # Open output stream
 #----------------------------
-my $ID="res-afnm-".$conf->{'fitness'}->{'class'}."-p". $population_size."-ns". $noise_sigma."-cs".$chromosome_length."-rr".$replacement_rate."-im".$initial_memory;
+my $ID="res-afnm-".$conf->{'fitness'}->{'class'}."-p". $population_size."-ns"
+    .$noise_sigma."-mm".$max_memory."-cs".$chromosome_length
+    ."-rr".$replacement_rate."-im".$initial_memory;
 my $io = IO::YAML->new("$ID-".DateTime->now().".yaml", ">");
 $conf->{'uname'} = $Config{'myuname'}; # conf stuff
 $conf->{'arch'} = $Config{'myarchname'};
@@ -116,13 +118,13 @@ for my $p ( @pop ) {
 do {
   $generation->apply( \@pop );
   for my $p ( @pop ) {
-    if ( ! $p->{'_fitness_memory'} ) {
-      push(@{$p->{'_fitness_memory'}}, $p->{'_fitness'});
-    }
-    if ( @{ $p->{'_fitness_memory'} } < $max_memory ) {
-	push(@{$p->{'_fitness_memory'}},  $noisy->apply( $p ));
-	$p->Fitness( average( $p->{'_fitness_memory'} ) );
-    }
+      if ( ! $p->{'_fitness_memory'} ) {
+	  $p->{'_fitness_memory'} = [];
+      }
+      if ( @{ $p->{'_fitness_memory'} } < $max_memory ) {
+	  push(@{$p->{'_fitness_memory'}},  $noisy->apply( $p ));
+	  $p->Fitness( average( $p->{'_fitness_memory'} ) );
+      }
   }
   $io->print( { evals => $noisy->evaluations(),
 		best => $pop[0] } );
