@@ -115,7 +115,7 @@ do {
   $generation->apply( \@pop );
   for my $p ( @pop ) {
       if ( ! $p->{'_fitness_memory'} ) {
-	  $p->{'_fitness_memory'} = [];
+	push(@{$p->{'_fitness_memory'}}, $p->{'_fitness'}); #Evaluation performed in GA
       }
       if ( @{ $p->{'_fitness_memory'} } < $max_memory ) {
 	  push(@{$p->{'_fitness_memory'}},  $noisy->apply( $p ));
