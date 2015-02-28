@@ -1,5 +1,9 @@
 2015-02-28  Juan J. merelo  <jmerelo@penny>
 
+	* process_experiments_yaml_MMDP.pl: After using a profiles, the
+	Wilcoxon version is so slow because it spends 99% of the time
+	computing Wilcoxon ranksum. Rather unexpected, that.
+
 	* run-any-noisy-memory-w.sh (CONF): Definitely getting old. I was
 	running just average-based fitness. 
 
