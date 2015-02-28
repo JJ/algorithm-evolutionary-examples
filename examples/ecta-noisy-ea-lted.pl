@@ -2,15 +2,11 @@
 
 =head1 NAME
 
-  trap.pl - Massively multimodal deceptive problem
+  ecta-noisy-ea-lted.pl - Massively multimodal deceptive noisy problem
 
 =head1 SYNOPSIS
 
-  prompt% ./trap.pl <population> <number of generations>
-
-or
-
-  prompt% perl trap.pl <population> <number of generations>
+  prompt% ecta-noisy-ea-lted.pl conf.yaml
 
 Shows fitness and best individual  
   
@@ -18,7 +14,7 @@ Shows fitness and best individual
 =head1 DESCRIPTION  
 
 A simple example of how to run an Evolutionary algorithm based on
-Algorithm::Evolutionary. Optimizes trap function.
+Algorithm::Evolutionary. Optimizes any fitness function, but adds noise.
 
 =cut
 
@@ -37,7 +33,7 @@ use Algorithm::Evolutionary::Individual::BitString;
 use Algorithm::Evolutionary::Op::Tournament_Selection;
 use Algorithm::Evolutionary::Op::Replace_Worst;
 use Algorithm::Evolutionary::Op::Generation_Skeleton_Ref;
-use Algorithm::Evolutionary::Op::Mutation;
+use Algorithm::Evolutionary::Op::Bitflip;
 use Algorithm::Evolutionary::Op::Crossover;
 use Algorithm::Evolutionary::Fitness::Noisy;
 
@@ -65,7 +61,7 @@ my $max_memory = $conf->{'max_memory'} || 30;
 
 # Open output stream
 #----------------------------
-my $ID="res-afnm-".$conf->{'fitness'}->{'class'}."-p". $population_size."-ns"
+my $ID="res-ectam-".$conf->{'fitness'}->{'class'}."-p". $population_size."-ns"
     .$noise_sigma."-mm".$max_memory."-cs".$chromosome_length
     ."-rr".$replacement_rate."-im".$initial_memory;
 my $io = IO::YAML->new("$ID-".DateTime->now().".yaml", ">");
@@ -84,7 +80,7 @@ for ( 0..$population_size ) {
 
 #----------------------------------------------------------#
 # Variation operators
-my $m = Algorithm::Evolutionary::Op::Mutation->new( 0.1, $mutation_priority );
+my $m = Algorithm::Evolutionary::Op::Bitflip->new( $mutation_priority );
 my $c = Algorithm::Evolutionary::Op::Crossover->new(2, $crossover_priority);
 
 #----------------------------------------------------------#
