@@ -66,7 +66,7 @@ print "Success rate ", $successful/ @files;
 
 write_file( "$preffix.times.dat", map("$_\n", @times ));
 my $R_var = $preffix;
-$R_var  =~ s/-/./g;
+$R_var  =~ s|[/-]|.|g;
 write_file( "$preffix.evaluations.dat",map("$_\n", @evaluations ));
 write_file( "$preffix.R", "$R_var.evals <- c("
 	    .join(",",map("$_", @evaluations )).")\n$R_var.times <- c("
