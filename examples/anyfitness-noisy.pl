@@ -32,7 +32,7 @@ use IO::YAML;
 use DateTime;
 use Config;
 
-use lib qw(lib ../lib);
+use lib qw(lib ../lib ../../Algorithm-Evolutionary/lib);
 use Algorithm::Evolutionary::Individual::BitString;
 use Algorithm::Evolutionary::Op::Tournament_Selection;
 use Algorithm::Evolutionary::Op::Replace_Worst;
@@ -62,6 +62,7 @@ my $noise_sigma = $conf->{'noise_sigma'}|| 1;
 
 # Open output stream
 #----------------------------
+my $initial_memory = 10;
 my $ID="res-afn-".$conf->{'fitness'}->{'class'}."-p". $population_size."-ns". $noise_sigma."-cs".$chromosome_length."-rr".$replacement_rate."-im".$initial_memory;
 my $io = IO::YAML->new("$ID-".DateTime->now().".yaml", ">");
 $conf->{'uname'} = $Config{'myuname'}; # conf stuff
@@ -89,7 +90,7 @@ eval  "require $fitness_class" || die "Can't load $fitness_class: $@\n";
 my @params = $conf->{'fitness'}->{'params'}? @{$conf->{'fitness'}->{'params'}} : ();
 my $fitness_object = eval $fitness_class."->new( \@params )" || die "Can't instantiate $fitness_class: $@\n";
 my $noisy = new  Algorithm::Evolutionary::Fitness::Noisy( $fitness_object,  
-							sub { return random_normal(1,0, $noise_sigma);});
+							  sub { return random_normal(1,0, $noise_sigma);});
 
 #----------------------------------------------------------#
 # Usamos estos operadores para definir una generación del algoritmo. Lo cual

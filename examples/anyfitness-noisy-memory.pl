@@ -91,7 +91,7 @@ eval  "require $fitness_class" || die "Can't load $fitness_class: $@\n";
 my @params = $conf->{'fitness'}->{'params'}? @{$conf->{'fitness'}->{'params'}} : ();
 my $fitness_object = eval $fitness_class."->new( \@params )" || die "Can't instantiate $fitness_class: $@\n";
 my $noisy = new  Algorithm::Evolutionary::Fitness::Noisy( $fitness_object,  
-							sub { return random_normal(1,0, $noise_sigma);});
+							  sub { return random_normal(1,0, $noise_sigma);});
 
 #----------------------------------------------------------#
 # Usamos estos operadores para definir una generación del algoritmo. Lo cual
